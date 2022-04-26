@@ -491,6 +491,10 @@ ul li {
       scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-points-x: 0px;
+      scroll-snap-points-x: 0px;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
 }
 
 .slides::-webkit-scrollbar {
