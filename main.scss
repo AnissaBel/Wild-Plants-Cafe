@@ -504,13 +504,12 @@ ul li {
   }
   
   .swiper  > a:focus {
-    background: rgb(255, 255, 255);
+    background: rgb(139, 45, 45);
   }
   
   /* Don't need button navigation */
-  @supports (scroll-snap-type) {
-    .swiper  > a {
-      display: none;
-    }
-  }
+  // @supports (scroll-snap-type) {
+  //   .swiper  > a {
+  //     display: none;
+  //   }
   
