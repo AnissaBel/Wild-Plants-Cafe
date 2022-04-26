@@ -542,8 +542,8 @@ ul li {
 }
 
 .slides > div:target {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .author-info {
