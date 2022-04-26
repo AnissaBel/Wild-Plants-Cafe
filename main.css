@@ -599,4 +599,22 @@ img {
 }
 
 /* Don't need button navigation */
+.grid {
+  width: 100vw;
+  height: 100vh;
+  background-color: wheat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid .card__container {
+  width: 90%;
+  height: 90%;
+  display: -ms-grid;
+  display: grid;
+}
 /*# sourceMappingURL=main.css.map */
