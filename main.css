@@ -623,18 +623,40 @@ img {
 }
 
 .grid .menu__cakes__grid .cards__container {
-  background-color: #84b4d4;
+  background-color: #20722d;
   padding: 1rem;
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid .menu__cakes__grid .cards__container .top__cards__container,
+.grid .menu__cakes__grid .cards__container .bottom__cards__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 750px) {
+  .grid .menu__cakes__grid .cards__container .top__cards__container,
+  .grid .menu__cakes__grid .cards__container .bottom__cards__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .grid .menu__cakes__grid .cards__container .grid__cards {
