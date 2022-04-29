@@ -614,9 +614,9 @@ ul li {
 
       .card__img__overlap {
         width: 100%;
-        height: 55%;
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-21px);
+        height: 60%;
+        /* -webkit-transform: translateY(-30px); */
+        transform: translateY(-40px);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -630,13 +630,17 @@ ul li {
           top: 0;
           left: 0;
           width: 85%;
+          box-shadow:0 8px 16px 0 rgb(0 0 0 / 20%);
         }
 
       }
 
       .card__container {
-        padding:1rem;
+        padding: 0rem 1rem 1rem 1rem;
         text-align: center;
+        width: 100%;
+        height: 91%;
+        transform: translateY(-15px);
 
         .card__title {
           padding-bottom:0.5rem;
