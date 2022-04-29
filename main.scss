@@ -478,14 +478,14 @@ ul li {
     color: white;
   }
   
-  img {
-    object-fit: cover;
-    // position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  // img {
+  //   object-fit: cover;
+  //   // position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  // }
   
   .swiper > a {
     display: inline-flex;
@@ -573,3 +573,77 @@ ul li {
 }
 
 //-----------SECTION TEST Cards Décalées----------- //
+
+.menu__cakes__grid {
+  width:90%;
+  height:auto;
+  display:flex;
+  justify-content: center;
+
+  .cards__container {
+    background-color: #20722d;
+    padding:1rem;
+    // width:100%;
+    // height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .top__cards__container,
+    .bottom__cards__container {
+      display:flex;
+    
+      @media screen and (max-width: 750px) {
+      flex-direction: column;
+       
+      } 
+    }
+    
+
+    .grid__cards__overlap {
+      width:200px;
+      height:250px;
+      background-color: var(--light-grey);
+      margin:1rem;
+      // overflow:hidden;
+      border-radius: 5px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+
+      .card__img__overlap {
+        width: 100%;
+        height: 55%;
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-21px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        
+
+        img {
+          object-fit: cover;
+          top: 0;
+          left: 0;
+          width: 85%;
+        }
+
+      }
+
+      .card__container {
+        padding:1rem;
+        text-align: center;
+
+        .card__title {
+          padding-bottom:0.5rem;
+        }
+      }
+    }
+  }
+}
+
+

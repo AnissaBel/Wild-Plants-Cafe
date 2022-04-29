@@ -562,15 +562,6 @@ ul li {
   color: white;
 }
 
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .swiper > a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -680,5 +671,98 @@ img {
 .grid .menu__cakes__grid .cards__container .grid__cards .card__container {
   padding: 1rem;
   text-align: center;
+}
+
+.menu__cakes__grid {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__cakes__grid .cards__container {
+  background-color: #20722d;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__cakes__grid .cards__container .top__cards__container,
+.menu__cakes__grid .cards__container .bottom__cards__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 750px) {
+  .menu__cakes__grid .cards__container .top__cards__container,
+  .menu__cakes__grid .cards__container .bottom__cards__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menu__cakes__grid .cards__container .grid__cards__overlap {
+  width: 200px;
+  height: 250px;
+  background-color: var(--light-grey);
+  margin: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__cakes__grid .cards__container .grid__cards__overlap .card__img__overlap {
+  width: 100%;
+  height: 55%;
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-21px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.menu__cakes__grid .cards__container .grid__cards__overlap .card__img__overlap img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 85%;
+}
+
+.menu__cakes__grid .cards__container .grid__cards__overlap .card__container {
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu__cakes__grid .cards__container .grid__cards__overlap .card__container .card__title {
+  padding-bottom: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
