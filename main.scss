@@ -4,6 +4,7 @@
     --light-grey:#ebebeb;
     --light-brown:#d4beb5;
     --light-green:#cee0d0;
+    --dark-green:#487d4e;
     --dark:#181818;
     --main-typo:'Spartan', sans-serif;
 }
@@ -112,7 +113,7 @@ h2 {
 .menu {
     width:100%;
     height:auto;
-    background-color: var(--light-green);
+    background-color: var(--dark-green);
     padding:2rem;
     overflow: hidden;
 
@@ -520,6 +521,7 @@ ul li {
   height:auto;
   background-color: wheat;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
   .menu__cakes__grid {
@@ -584,6 +586,7 @@ ul li {
   // width:90%;
   height:auto;
   display:flex;
+  flex-direction: column;
   justify-content:space-around;
   padding:2rem;
 
@@ -604,6 +607,7 @@ ul li {
     
       @media screen and (max-width: 750px) {
       flex-direction: column;
+      flex-wrap:wrap;
       padding-top: 0rem
        
       } 
