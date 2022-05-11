@@ -59,7 +59,7 @@
                             </h4>
 
                             <p class="card__text">
-                                Lorem ipsum dolor sit amet<br>
+                               Préparé à base de café expresso, mélangé avec du lait et coiffé d'une mousse de lait crémeuse.
                             </p>
 
                             <span class="prix">3,20 €</span>
@@ -81,7 +81,7 @@
                                 Latté
                             </h4>
                             <p class="card__text">
-                                Lorem ipsum dolor sit
+                                Préparé à base d'un simple ou double espresso et de lait monté en mousse épaisse.
                             </p>
                             <span class="prix">3,50 €</span>
                         </div>
@@ -104,7 +104,7 @@
                                 Flat White
                             </h4>
                             <p class="card__text">
-                                Lorem ipsum dolor sit ame
+                                Ressemble au café Latté mais plus corsé que ce dernier.
                             </p>
                             <span class="prix">3,70 €</span>
                         </div>
@@ -131,7 +131,7 @@
                                 Café Viennois
                             </h4>
                             <p class="card__text">
-                                Lorem ipsum dolor sit amet
+                                Composée d'un simple ou double expresso, de lait battu avec de la crème fouettée.
                             </p> 
                             <span class="prix">3,80 €</span>
                         </div>
@@ -151,10 +151,10 @@
 
                         <div class="card__container">
                             <h4 class="card__title">
-                                Américano
+                                Americano
                             </h4>
                             <p class="card__text">
-                                Lorem ipsum dolor sit
+                                Préparé à base d'un expresso et d'eau chaude.
                             </p>
                             <span class="prix">3,10 €</span>
                         </div>
@@ -174,10 +174,10 @@
 
                         <div class="card__container">
                             <h4 class="card__title">
-                                Café Long
+                                Long Black
                             </h4>
                             <p class="card__text">
-                                Lorem ipsum dolor sit
+                                Préparé en allongeant deux doses d'expresso avec de l'eau chaude.
                             </p>
                             <span class="prix">3,00 €</span>
                         </div>
@@ -199,10 +199,10 @@
                 <ul>
                     <li>Cappuccino - 3,50 €</li>
                     <li>Flat White - 3,50 €</li>
-                    <li>Américano  - 3,00 €</li>
+                    <li>Latté  - 3,00 €</li>
                     <li>Café Viennois  - 3,70 €</li>
-                    <li>Café Liégois - 3,70 €</li>
-                    <li>Expresso - 2,50 €</li>
+                    <li>Americano - 3,70 €</li>
+                    <li>Long Black - 3,50 €</li>
                 </ul>
             </div>
         </div>
@@ -289,7 +289,7 @@
 
                         <div class="card__container">
                             <h4 class="card__title">
-                                Tarte aux Agrumes
+                                Tarte aux <br> Agrumes
                             </h4>
                             <p class="card__text">
                                 Lorem ipsum dolor sit amet
@@ -685,6 +685,50 @@
         </div> -->
 
                 <!-- FIN SWIPER CODE PEN  -->
+            
+    </section>
+
+    <section class="swipersection">
+      
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+        
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
+            </script>
     </section>
 
 <script> 
