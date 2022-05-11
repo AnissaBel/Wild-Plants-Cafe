@@ -339,10 +339,17 @@ ul li {
 
 .contact .contact__container .contact__hours,
 .contact .contact__container .contact__adress,
-.contact .contact__container .contact__map {
+.contact .contact__container .contact__social {
   width: 100%;
   height: auto;
   padding: 1rem;
+  margin: auto;
+}
+
+.contact .contact__container .contact__hours .social,
+.contact .contact__container .contact__adress .social,
+.contact .contact__container .contact__social .social {
+  width: 100%;
   margin: auto;
 }
 

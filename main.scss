@@ -312,11 +312,16 @@ ul li {
 
         .contact__hours,
         .contact__adress,
-        .contact__map {
+        .contact__social {
             width:100%;
             height:auto;
             padding:1rem;
             margin:auto;
+
+            .social {
+              width:100%;
+              margin:auto;
+            }
             
         }
      }
