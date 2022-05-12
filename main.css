@@ -47,13 +47,28 @@ h2 {
   height: 100vh;
 }
 
+.hero .nav__shadow {
+  display: block;
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  right: 0px;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 12px 0px 115px 35px #000;
+          box-shadow: 12px 0px 115px 35px #000;
+}
+
 .hero nav {
   display: block;
   width: 100%;
-  top: 20px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
   text-align: right;
   position: fixed;
+  z-index: 5;
+  -webkit-box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.349);
+          box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.349);
 }
 
 .hero nav a {
@@ -70,7 +85,6 @@ h2 {
           transform: translateY(-8px);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: var(--primary);
 }
 
 .hero h1 {
@@ -82,6 +96,9 @@ h2 {
           transform: translate(-50%, -50%);
   color: white;
   font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 12px 0px 115px 35px #000;
+          box-shadow: 12px 0px 115px 35px #000;
 }
 
 .hero .arrows-down {
@@ -534,7 +551,7 @@ ul li {
 
 .cards__container .grid__cards__overlap .card__img__overlap .grains {
   width: 50%;
-  height: 20%;
+  height: 15%;
   margin: 0rem auto 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -564,7 +581,7 @@ ul li {
 
 .cards__container .grid__cards__overlap .card__container .card__text {
   margin-bottom: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .cards__container .grid__cards__overlap .card__container .prix {
