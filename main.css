@@ -35,6 +35,7 @@ h2 {
 
 .section__title {
   text-align: center;
+  color: var(--light-grey);
 }
 
 .hero {
@@ -586,6 +587,13 @@ ul li {
 
 .cards__container .grid__cards__overlap .card__container .prix {
   font-weight: 600;
+}
+
+.cards__container .grid__cards__overlap:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .swipersection {
