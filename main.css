@@ -147,9 +147,14 @@ h2 {
   text-align: center;
 }
 
-.menu .menu__container {
-  width: 100%;
-  height: 100%;
+.menu .container__cafe__list,
+.menu .container__cake__list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8C8;
+  padding: 1rem;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,12 +162,27 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
 }
 
-.menu .menu__container .menu__cafes,
-.menu .menu__container .menu__cakes {
+@media screen and (max-width: 1000px) {
+  .menu .container__cafe__list,
+  .menu .container__cake__list {
+    width: 100%;
+  }
+}
+
+.menu .container__cafe__list .menu__right__title,
+.menu .container__cake__list .menu__right__title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.menu .menu__cafes,
+.menu .menu__cakes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,20 +191,20 @@ h2 {
   padding: 2rem;
 }
 
-.menu .menu__container .menu__cafes .container__swiper__cafes,
-.menu .menu__container .menu__cafes .container__swiper__cakes,
-.menu .menu__container .menu__cakes .container__swiper__cafes,
-.menu .menu__container .menu__cakes .container__swiper__cakes {
+.menu .menu__cafes .container__swiper__cafes,
+.menu .menu__cafes .container__swiper__cakes,
+.menu .menu__cakes .container__swiper__cafes,
+.menu .menu__cakes .container__swiper__cakes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (max-width: 1120px) {
-  .menu .menu__container .menu__cafes .container__swiper__cafes,
-  .menu .menu__container .menu__cafes .container__swiper__cakes,
-  .menu .menu__container .menu__cakes .container__swiper__cafes,
-  .menu .menu__container .menu__cakes .container__swiper__cakes {
+  .menu .menu__cafes .container__swiper__cafes,
+  .menu .menu__cafes .container__swiper__cakes,
+  .menu .menu__cakes .container__swiper__cafes,
+  .menu .menu__cakes .container__swiper__cakes {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -221,6 +241,37 @@ ul li {
   text-align: center;
 }
 
+.menu__cakes .container__cake__list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8C8;
+  padding: 1rem;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu__cakes .container__cake__list {
+    width: 100%;
+  }
+}
+
+.menu__cakes .container__cake__list .menu__right__title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .menu__cakes .menu__cafes,
 .menu__cakes .menu__cakes {
   display: -webkit-box;
@@ -244,51 +295,16 @@ ul li {
   }
 }
 
-.menu__cakes .menu__cafes .container__cafe__list,
-.menu__cakes .menu__cafes .container__cake__list,
-.menu__cakes .menu__cakes .container__cafe__list,
-.menu__cakes .menu__cakes .container__cake__list {
-  background-color: #8C8;
-  padding: 1rem;
-  width: 40%;
-}
-
-.menu__cakes .menu__cafes .container__cafe__list .container__cake__list,
-.menu__cakes .menu__cafes .container__cake__list .container__cake__list,
-.menu__cakes .menu__cakes .container__cafe__list .container__cake__list,
-.menu__cakes .menu__cakes .container__cake__list .container__cake__list {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.menu__cakes .menu__cafes .container__cafe__list .menu__right__title,
-.menu__cakes .menu__cafes .container__cake__list .menu__right__title,
-.menu__cakes .menu__cakes .container__cafe__list .menu__right__title,
-.menu__cakes .menu__cakes .container__cake__list .menu__right__title {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-.menu__cakes .menu__cafes .container__swiper__cafes,
-.menu__cakes .menu__cafes .container__swiper__cakes,
-.menu__cakes .menu__cakes .container__swiper__cafes,
-.menu__cakes .menu__cakes .container__swiper__cakes {
+.menu__cakes .container__swiper__cafes,
+.menu__cakes .container__swiper__cakes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (max-width: 1120px) {
-  .menu__cakes .menu__cafes .container__swiper__cafes,
-  .menu__cakes .menu__cafes .container__swiper__cakes,
-  .menu__cakes .menu__cakes .container__swiper__cafes,
-  .menu__cakes .menu__cakes .container__swiper__cakes {
+  .menu__cakes .container__swiper__cafes,
+  .menu__cakes .container__swiper__cakes {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -312,7 +328,6 @@ ul li {
 .apropos .container__apropos {
   width: 90%;
   height: auto;
-  background-color: #91562f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,14 +342,12 @@ ul li {
 .apropos .container__apropos .texte__apropos {
   width: 100%;
   height: auto;
-  background-color: orange;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .apropos .container__apropos .gallerie__apropos {
   width: 100%;
   height: auto;
-  background-color: blue;
   display: -ms-grid;
   display: grid;
 }
@@ -620,6 +633,17 @@ ul li {
   padding: 2rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .menu__cafes__grid,
+  .menu__cakes__grid {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .cards__container {
   padding: 1rem;
   display: -webkit-box;
@@ -644,6 +668,19 @@ ul li {
   padding-top: 3rem;
 }
 
+@media screen and (max-width: 600px) {
+  .cards__container .top__cards__container,
+  .cards__container .bottom__cards__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .cards__container .grid__cards__overlap {
   width: 200px;
   height: 250px;
@@ -659,6 +696,12 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .cards__container .grid__cards__overlap {
+    margin-top: 3rem;
+  }
 }
 
 .cards__container .grid__cards__overlap .card__img__overlap {
@@ -772,5 +815,139 @@ ul li {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.slider-container {
+  background: linear-gradient(149deg, #f700ff 0%, #ff9100 100%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.slider {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+.slide:nth-of-type(even) {
+  background-color: #faf6d4;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  scroll-snap-align: center;
+  margin-right: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: white;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.slide__text {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.slide a {
+  background: none;
+  border: none;
+}
+
+a.slide__prev,
+.slider::before {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 5%;
+}
+
+a.slide__next,
+.slider::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 5%;
+}
+
+.slider::before,
+.slider::after,
+.slide__prev,
+.slide__next {
+  position: absolute;
+  top: 48%;
+  width: 35px;
+  height: 35px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  padding: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  z-index: 1;
+  background: none;
+  pointer-events: none;
+}
+
+.slider__nav {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+.slider__navlink {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 10px 0 10px;
 }
 /*# sourceMappingURL=main.css.map */
