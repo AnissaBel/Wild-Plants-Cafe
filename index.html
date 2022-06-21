@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&family=Spartan:wght@300;600&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <title>Wild Plant Café</title>
 </head>
 <body>
@@ -349,21 +350,11 @@
         <!------------------ PARTIE CAKE  --------------------->
 
             <!-- Début du container du texte avec prix des cakes à droite du swiper-->
-            <!-- <div class="container__cake__list">
+            <div class="container__cake__list">
                 <h3 class="menu__right__title">
-                    Les cakes
-                </h3><br>
-                <div class="cake__list">
-                    <ul>
-                        <li>Cheese Cake Nature - 4,00 €</li>
-                        <li>Cheese Cake Framboise - 4,50 €</li>
-                        <li>Cheese Cake Myrtilles - 4,50 €</li>
-                        <li>Tarte au Questches - 4,00 €</li>
-                        <li>Carrot Cake - 4,70 €</li>
-                        <li>Fondant Choclat Café - 3,70 €</li>
-                    </ul>
-                </div>
-            </div> -->
+                    Nos gourmandises sont faites maison.
+                </h3>
+            </div>
             <!-- Fin du container du texte avec prix des cakes à droite du swiper-->
 
         </div>
@@ -407,16 +398,24 @@
                         <img  src="images/pexels-huỳnh-đạt-3262277.jpg" alt='Logo monogramme "AB" réalisés avec Adobe Illustrator et Photoshop' class="image">
                 
                     </div>
+
+                    <div class="picture picture-illu fade">
+                        <img src="images/pexels-ketut-subiyanto-4349800.jpg" alt='Illustration vectorielle pour présenter la ville de Wellington réalisée avec Adobe Illustrator' class="image">
+                        
+                    </div>
     
                     <div class="picture picture-web fade">
                         <img src="images/toa-heftiba-QnUywvDdI1o-tablechaleur.jpg" alt='Site web "Vegefoods" en one page réalisé avec HTML CSS et JavaScript' class="image">
                     
                     </div>
     
-                    <div class="picture picture-illu fade">
-                        <img src="images/pexels-ketut-subiyanto-4349800.jpg" alt='Illustration vectorielle pour présenter la ville de Wellington réalisée avec Adobe Illustrator' class="image">
-                        
+                    <div class="picture picture-anim fade">
+                        <img src="Images/pexels-vlada-karpovich-4451742.jpg" alt='Animation GIF réalisée dans un Mockup avec Adobe Photoshop' class="image">
                     </div>
+
+                    <div class="picture picture-anim fade">
+                        <img src="images/kris-atomic-3b2tADGAWnU-tablevue.jpg" alt='Animation GIF réalisée dans un Mockup avec Adobe Photoshop' class="image">
+                    </div>s
     
                     <div class="picture picture-illu fade">
                     
@@ -424,19 +423,10 @@
                        
                     </div>
 
-
-                    <div class="picture picture-anim fade">
-                        <img src="images/kris-atomic-3b2tADGAWnU-tablevue.jpg" alt='Animation GIF réalisée dans un Mockup avec Adobe Photoshop' class="image">
-                    </div>
-
                     <div class="picture picture-anim fade">
                         <img src="images/pexels-stacey-gabrielle-koenitz-rozells-4451667.jpg" alt='Animation GIF réalisée dans un Mockup avec Adobe Photoshop' class="image">
                     </div>
 
-                    <div class="picture picture-anim fade">
-                        <img src="Images/pexels-vlada-karpovich-4451742.jpg" alt='Animation GIF réalisée dans un Mockup avec Adobe Photoshop' class="image">
-                    </div>
-    
                 </div>   
     
                 <!-- <div class="grid__gallerie">
@@ -522,7 +512,16 @@
         </div>
 
     </section>
+    
     <!----------------- FIN SECTION CONTACT --------------------->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div> 
+    
+    <script src="/js/script.js"></script>
 
 </body>
 
