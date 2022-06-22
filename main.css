@@ -270,6 +270,8 @@ ul li {
   font-weight: 700;
   color: white;
   padding: 1rem;
+  padding: 6rem;
+  margin-left: 4rem;
 }
 
 .menu__cakes .menu__cafes,
@@ -325,7 +327,7 @@ ul li {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 2rem;
+  padding: 10rem 2rem 10rem 2rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -344,13 +346,23 @@ ul li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   width: 100%;
   height: 100%;
 }
 
+@media screen and (max-width: 800px) {
+  .menu__cafes__grid {
+    background-color: #8f5631;
+  }
+}
+
 .menu__cakes__grid {
-  border-radius: 40%;
+  background-image: url(Images/blobgreen.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .cards__container {
@@ -498,7 +510,6 @@ ul li {
 .apropos {
   width: 100%;
   height: auto;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -632,7 +643,6 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
   padding: 2rem;
 }
 
