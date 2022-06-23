@@ -734,6 +734,7 @@ ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 18rem 0rem 15rem 0rem;
   }
 }
 
@@ -846,6 +847,14 @@ ul li {
   padding: 0rem 10rem 4rem 0rem;
 }
 
+@media screen and (max-width: 850px) {
+  .text__actu {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem 2rem 2rem;
+  }
+}
+
 .text__info {
   padding: 1rem;
   width: 100%;
@@ -858,8 +867,8 @@ ul li {
 .actu__white {
   width: 100%;
   color: var(--light-grey);
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
   line-height: 1.6;
 }
 
