@@ -181,6 +181,23 @@ h2 {
   padding: 1rem;
 }
 
+@media screen and (max-width: 950px) {
+  .menu .container__cafe__list .menu__right__title,
+  .menu .container__cake__list .menu__right__title {
+    padding: 7rem 2rem 1rem 4rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu .container__cafe__list .menu__right__title,
+  .menu .container__cake__list .menu__right__title {
+    padding: 7rem 2rem 1rem 4rem;
+    margin-left: 2rem;
+    padding: 19rem 2rem 1rem 4rem;
+  }
+}
+
 .menu .menu__cafes,
 .menu .menu__cakes {
   display: -webkit-box;
@@ -212,6 +229,16 @@ h2 {
   }
 }
 
+@media screen and (max-width: 950px) {
+  .menu {
+    padding: 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .card__img {
   width: 100%;
   height: 60%;
@@ -232,7 +259,6 @@ ul li {
 .menu__cakes {
   width: 100%;
   height: auto;
-  padding: 2rem;
   overflow: hidden;
 }
 
@@ -274,6 +300,19 @@ ul li {
   margin-left: 4rem;
 }
 
+@media screen and (max-width: 600px) {
+  .menu__cakes .container__cake__list .menu__right__title {
+    padding: 2rem;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .menu__cakes .container__cake__list .menu__right__title {
+    padding: 7rem 2rem 1rem 4rem;
+  }
+}
+
 .menu__cakes .menu__cafes,
 .menu__cakes .menu__cakes {
   display: -webkit-box;
@@ -281,7 +320,6 @@ ul li {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 2rem;
 }
 
 @media screen and (max-width: 1120px) {
@@ -350,9 +388,24 @@ ul li {
   height: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .menu__cafes__grid {
-    background-color: #8f5631;
+    background-image: url(Images/blobbrownvertical.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0rem 0rem 14rem 0rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .menu__cafes__grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -363,6 +416,17 @@ ul li {
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .menu__cakes__grid {
+    background-image: url(Images/blobgreenvertical.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .cards__container {
@@ -399,6 +463,7 @@ ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 1rem;
   }
 }
 
@@ -742,6 +807,16 @@ ul li {
   padding: 1rem;
   color: white;
   font-weight: 500;
+}
+
+@media all and (max-width: 600px) {
+  .contact .contact__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }
 
 .contact .contact__container .contact__hours,
