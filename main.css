@@ -409,7 +409,8 @@ ul li {
   }
 }
 
-.menu__cakes__grid {
+.menu__cakes__grid,
+.actu__container {
   background-image: url(Images/blobgreen.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -419,7 +420,8 @@ ul li {
 }
 
 @media screen and (max-width: 600px) {
-  .menu__cakes__grid {
+  .menu__cakes__grid,
+  .actu__container {
     background-image: url(Images/blobgreenvertical.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -566,12 +568,6 @@ ul li {
   transition: 0.3s ease-in-out;
 }
 
-.blob {
-  width: 100%;
-  height: 100%;
-  fill: yellow;
-}
-
 .apropos {
   width: 100%;
   height: auto;
@@ -694,7 +690,7 @@ ul li {
 
 .actu {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,6 +707,12 @@ ul li {
   padding: 2rem;
 }
 
+@media screen and (max-width: 950px) {
+  .actu {
+    padding: 0;
+  }
+}
+
 .actu__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -721,17 +723,59 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
-  height: 90%;
-  background-color: var(--dark-green);
-  border-radius: 45%;
+  padding: 18rem 2rem 15rem 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .actu__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.actu__slider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .actu__slider__container {
+    width: 100%;
+  }
 }
 
 .w3-display-container {
-  width: 600px;
-  height: 350px;
+  width: 500px;
+  height: 400px;
   background-color: purple;
   position: relative;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+  .w3-display-container {
+    width: 100%;
+  }
 }
 
 .mySlides {
@@ -751,21 +795,24 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .slide__info {
-  width: 80%;
+  width: 100%;
   height: 100%;
   background-color: white;
   border-radius: 10px;
-  padding: 2rem;
 }
 
 .slide__info img {
   width: 100%;
-  height: 50%;
+  height: 45%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 7px;
 }
 
 .w3-button {
@@ -781,21 +828,76 @@ ul li {
 
 .w3-display-left {
   position: absolute;
-  top: 50%;
-  left: -1%;
+  top: 40%;
+  left: -3%;
+  opacity: 0.7;
 }
 
 .w3-display-right {
   position: absolute;
-  top: 50%;
-  right: -1%;
+  top: 40%;
+  right: -3%;
+  opacity: 0.7;
+}
+
+.text__actu {
+  width: 50%;
+  height: auto;
+  padding: 0rem 10rem 4rem 0rem;
+}
+
+.text__info {
+  padding: 1rem;
+  width: 100%;
+}
+
+.text__info h4 {
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.actu__white {
+  width: 100%;
+  color: var(--light-grey);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.info {
+  padding: 0rem 0rem 1rem 0rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.reserver {
+  text-decoration: none;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill;
+  height: 20px;
+  padding: 1rem;
+  background-color: var(--dark-green);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.reserver:hover {
+  background-color: white;
+  color: var(--dark-green);
+  border: 1px solid var(--dark-green);
 }
 
 .contact {
   width: 100%;
   height: auto;
-  background-color: var(--secondary);
+  background-color: var(--dark-green);
   padding: 2rem;
+}
+
+.contact #contact {
+  color: white;
 }
 
 .contact .contact__container {
@@ -822,10 +924,18 @@ ul li {
 .contact .contact__container .contact__hours,
 .contact .contact__container .contact__adress,
 .contact .contact__container .contact__social {
-  width: 100%;
+  width: 30%;
   height: auto;
   padding: 1rem;
-  margin: auto;
+  line-height: 2;
+}
+
+@media screen and (max-width: 600px) {
+  .contact .contact__container .contact__hours,
+  .contact .contact__container .contact__adress,
+  .contact .contact__container .contact__social {
+    width: 100%;
+  }
 }
 
 .contact .contact__container .contact__hours .social,
