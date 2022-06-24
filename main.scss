@@ -85,12 +85,16 @@ h2 {
         text-decoration: none;
         padding:20px;
         font-weight:600;
+        text-shadow:1px 1px 1px #141414;
+        // -webkit-text-stroke-width: 1px;
+        // -webkit-text-stroke-color: black;
         
     }
 
     nav a:hover {
         transform: translateY(-8px);
         transition:0.5s;
+        color:var(--dark-green);
         
         
     }
@@ -515,10 +519,11 @@ ul li {
      margin:auto;
 
      .text__container__apropos {
-       width:100%;
-       height:auto;
-      //  background-color: orange;
-       padding:2rem;
+      font-size: 1.1rem;
+      width: 90%;
+      height: auto;
+      padding: 2rem;
+      margin: 3rem auto 3rem;
      }
 
      .title__apropos {
@@ -527,13 +532,15 @@ ul li {
       font-weight: 600;
       color:var(--dark-green);
       margin:1rem;
+
      }
 
      .text__apropos {
-      line-height:1.5;
+      line-height: 1.8;
       font-weight: 500;
       text-align: left;
-      margin:3rem 0 2rem 0;
+      margin: 3rem 0 1rem 0;
+      font-size: 1.1rem;
 
      }
 

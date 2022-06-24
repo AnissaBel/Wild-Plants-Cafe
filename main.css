@@ -78,6 +78,7 @@ h2 {
   text-decoration: none;
   padding: 20px;
   font-weight: 600;
+  text-shadow: 1px 1px 1px #141414;
 }
 
 .hero nav a:hover {
@@ -85,6 +86,7 @@ h2 {
           transform: translateY(-8px);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  color: var(--dark-green);
 }
 
 .hero h1 {
@@ -595,9 +597,11 @@ ul li {
 }
 
 .apropos .container__apropos .text__container__apropos {
-  width: 100%;
+  font-size: 1.1rem;
+  width: 90%;
   height: auto;
   padding: 2rem;
+  margin: 3rem auto 3rem;
 }
 
 .apropos .container__apropos .title__apropos {
@@ -609,10 +613,11 @@ ul li {
 }
 
 .apropos .container__apropos .text__apropos {
-  line-height: 1.5;
+  line-height: 1.8;
   font-weight: 500;
   text-align: left;
-  margin: 3rem 0 2rem 0;
+  margin: 3rem 0 1rem 0;
+  font-size: 1.1rem;
 }
 
 .apropos .container__apropos .gallerie__apropos {
