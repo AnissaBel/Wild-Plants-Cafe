@@ -65,7 +65,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 12px 0px 115px 35px #000;
           box-shadow: 12px 0px 115px 35px #000;
-}
+} 
 
 .hero nav {
   display: block;
@@ -81,17 +81,20 @@ h2 {
 
 .hero nav a {
   display: inline-block;
+  font-size: 1.1rem;
   text-align: center;
   color: var(--light-grey);
   text-decoration: none;
   padding: 20px;
   font-weight: 600;
   text-shadow: 1px 1px 1px #141414;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; */
 }
 
 @media screen and (max-width:450px) {
   .hero nav a {
-    padding: 15px;
+    padding: 15px 9px;
    
   }
 }
@@ -689,10 +692,10 @@ ul li {
   text-align: center;
 }
 
-/* .apropos .container__apropos .picture a {
-  width: 100%;
-  height: 100%;
-} */
+.apropos .container__apropos .picture:hover {
+  transform: scale(1.1);
+  transition: ease 0.4s;
+} 
 
 .apropos .container__apropos .column {
   max-width: 20%;
