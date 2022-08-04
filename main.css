@@ -838,8 +838,8 @@ ul li {
 }
 
 .w3-button {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: none;
 }
@@ -851,15 +851,15 @@ ul li {
 .w3-display-left {
   position: absolute;
   top: 40%;
-  left: -3%;
-  opacity: 0.7;
+  left: -5%;
+  opacity: 0.8;
 }
 
 .w3-display-right {
   position: absolute;
   top: 40%;
-  right: -3%;
-  opacity: 0.7;
+  right: -5%;
+  opacity: 0.8;
 }
 
 
@@ -955,7 +955,7 @@ ul li {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 1rem;
+  padding: 2rem ;
   color: white;
   font-weight: 500;
 }
