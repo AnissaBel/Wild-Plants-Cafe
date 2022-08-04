@@ -6,7 +6,7 @@
   --dark-brown:#311c0e;
   --light-green:#cee0d0;
   --dark-green:#35813d;
-  --dark:#181818;
+  --dark:#2f2f2f;
   --main-typo:'Spartan', sans-serif;
 }
 
@@ -87,6 +87,13 @@ h2 {
   padding: 20px;
   font-weight: 600;
   text-shadow: 1px 1px 1px #141414;
+}
+
+@media screen and (max-width:450px) {
+  .hero nav a {
+    padding: 15px;
+   
+  }
 }
 
 .hero nav a:hover {
@@ -771,7 +778,7 @@ ul li {
 .w3-display-container {
   width: 490px;
   height: 440px;
-  background-color: purple;
+  background-color: var(--light-grey);
   position: relative;
   border-radius: 5px;
   display: -webkit-box;
@@ -855,6 +862,18 @@ ul li {
   opacity: 0.7;
 }
 
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 .text__actu {
   width: 50%;
   height: auto;
@@ -916,6 +935,7 @@ ul li {
   background-color: white;
   color: var(--dark-green);
   border: 1px solid var(--dark-green);
+  transition: ease-in-out 0.4s;
 }
 
 .contact {
@@ -976,3 +996,4 @@ ul li {
   margin: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
+
