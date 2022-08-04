@@ -689,6 +689,11 @@ ul li {
   text-align: center;
 }
 
+/* .apropos .container__apropos .picture a {
+  width: 100%;
+  height: 100%;
+} */
+
 .apropos .container__apropos .column {
   max-width: 20%;
 }
